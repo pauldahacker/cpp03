@@ -21,17 +21,18 @@ ScavTrap::~ScavTrap(void)
     std::cout << "Destroying ScavTrap " << _name << std::endl;
 }
 
-ScavTrap &ScavTrap::operator=(const ScavTrap &other)
+void ScavTrap::attack(const std::string& target)
 {
-    if (this != &other)
+	if (_hp == 0)
+		std::cout << "ScavTrap " << _name << " is dead, it can't attack!" << std::endl;
+	else if (_ep == 0)
+		std::cout << "ScavTrap " << _name << " has no energy, it can't attack!" << std::endl;
+	else
 	{
-		this->_name = other._name;
-		this->_hp = other._hp;
-		this->_ep = other._ep;
-		this->_dmg = other._dmg;
-        this->_maxHp = other._maxHp;
+		--this->_ep;
+		std::cout << "ScavTrap " << _name << " attacks " << target << ", causing " << _dmg
+			<< " points of damage! [Energy left: [" << _ep << "]" << std::endl;
 	}
-	return (*this);
 }
 
 void ScavTrap::guardGate(void)

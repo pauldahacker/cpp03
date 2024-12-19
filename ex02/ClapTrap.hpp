@@ -3,7 +3,6 @@
 
 # include <iostream>
 # include <string>
-# include <algorithm>
 
 # define CLAP_HP (unsigned int)10
 # define CLAP_EP (unsigned int)10

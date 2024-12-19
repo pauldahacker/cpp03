@@ -21,19 +21,6 @@ FragTrap::~FragTrap(void)
     std::cout << "Destroying FragTrap " << _name << std::endl;
 }
 
-FragTrap &FragTrap::operator=(const FragTrap &other)
-{
-    if (this != &other)
-	{
-		this->_name = other._name;
-		this->_hp = other._hp;
-		this->_ep = other._ep;
-		this->_dmg = other._dmg;
-        this->_maxHp = other._maxHp;
-	}
-	return (*this);
-}
-
 void FragTrap::highFivesGuys(void)
 {
     std::cout << "FragTrap " << _name << " requests a positive high fives." << std::endl;

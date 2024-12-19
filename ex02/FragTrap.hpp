@@ -15,8 +15,6 @@ class FragTrap : public ClapTrap
         FragTrap(const FragTrap &other);
 		~FragTrap(void);
 
-		FragTrap &operator=(const FragTrap &other);
-
 		void highFivesGuys();
 };
 

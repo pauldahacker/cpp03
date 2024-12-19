@@ -6,7 +6,7 @@ GREEN =	\033[0;92m
 
 NAME = clapTrap
 CC = c++
-FLAGS = -Wall -Wextra -Werror
+FLAGS = -Wall -Wextra -Werror -std=c++98
 
 HEADER = ClapTrap.hpp
 
