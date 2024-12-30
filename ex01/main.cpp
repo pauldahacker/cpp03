@@ -2,7 +2,7 @@
 
 int main(void)
 {
-    ScavTrap _default;
+	ScavTrap _default;
 	ScavTrap _default_cpy = ScavTrap(_default);
 	ScavTrap a = ScavTrap("LION");
 	ScavTrap b = ScavTrap("SHARK");
@@ -56,5 +56,5 @@ int main(void)
 	c.beRepaired(5);
 	std::cout << std::endl;
 */
-    return (0);
+	return (0);
 }

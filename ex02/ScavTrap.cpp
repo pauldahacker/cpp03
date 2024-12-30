@@ -2,23 +2,23 @@
 
 ScavTrap::ScavTrap(void) : ClapTrap(SCAV_HP, SCAV_EP, SCAV_DMG)
 {
-    std::cout << "Constructing Default ScavTrap " << std::endl;
+	std::cout << "Constructing Default ScavTrap " << std::endl;
 }
 
 ScavTrap::ScavTrap(std::string name) : ClapTrap(name, SCAV_HP, SCAV_EP, SCAV_DMG)
 {
-    std::cout << "Constructing ScavTrap " << name << std::endl;
+	std::cout << "Constructing ScavTrap " << name << std::endl;
 }
 
 ScavTrap::ScavTrap(const ScavTrap &other)
 {
-    std::cout << "Copy ScavTrap constructor called" << std::endl;
-    *this = other;
+	std::cout << "Copy ScavTrap constructor called" << std::endl;
+	*this = other;
 }
 
 ScavTrap::~ScavTrap(void)
 {
-    std::cout << "Destroying ScavTrap " << _name << std::endl;
+	std::cout << "Destroying ScavTrap " << _name << std::endl;
 }
 
 void ScavTrap::attack(const std::string& target)
@@ -37,5 +37,5 @@ void ScavTrap::attack(const std::string& target)
 
 void ScavTrap::guardGate(void)
 {
-    std::cout << "ScavTrap " << _name << " is now in Gate keeper mode." << std::endl;
+	std::cout << "ScavTrap " << _name << " is now in Gate keeper mode." << std::endl;
 }

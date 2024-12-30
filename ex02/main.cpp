@@ -32,8 +32,8 @@ int main(void)
 	c.highFivesGuys();
 	std::cout << std::endl;
 /*
-    // same test as ex01:
-    ScavTrap _default;
+	// same test as ex01:
+	ScavTrap _default;
 	ScavTrap _default_cpy = ScavTrap(_default);
 	ScavTrap a = ScavTrap("LION");
 	ScavTrap b = ScavTrap("SHARK");
@@ -62,8 +62,8 @@ int main(void)
 	std::cout << std::endl;
 */
 /*
-    // Same test as ex00:
-    ClapTrap _default;
+	// Same test as ex00:
+	ClapTrap _default;
 	ClapTrap a = ClapTrap("LION");
 	ClapTrap b = ClapTrap("SHARK");
 	ClapTrap c = _default;

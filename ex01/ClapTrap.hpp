@@ -11,9 +11,9 @@
 class ClapTrap
 {
 	// uncommented = same as ex00
-    protected:
-        std::string 	_name;
-        unsigned int	_hp;
+	protected:
+		std::string 	_name;
+		unsigned int	_hp;
 		unsigned int	_ep;
 		unsigned int	_dmg;
 		unsigned int	_maxHp; // will be either 10 for ClapTrap or 50 for SlavTrap
