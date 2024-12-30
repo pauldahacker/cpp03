@@ -23,6 +23,15 @@ FragTrap::~FragTrap(void)
 
 void FragTrap::highFivesGuys(void)
 {
-	std::cout << "FragTrap " << _name << " requests a positive high fives." << std::endl;
+	if (_hp == 0)
+		std::cout << "ScavTrap " << _name << " is dead, it can't highFivesGuys!" << std::endl;
+	else if (_ep == 0)
+		std::cout << "ScavTrap " << _name << " has no energy, it can't highFivesGuys!" << std::endl;
+	else
+	{
+		std::cout << "FragTrap " << _name << " requests a positive high five (Press Enter...)";
+		std::cin.get();
+		std::cout << "The high five was successful. You now have to marry FragTrap " << _name << std::endl;
+	}
 }
 	

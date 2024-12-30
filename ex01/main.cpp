@@ -13,6 +13,7 @@ int main(void)
 	for (int i=0; i <= 50; ++i)
 		a.attack("TIGER");
 	a.beRepaired(1); //should not work because ep = 0
+	a.guardGate(); //should not work because ep = 0
 
 	std::cout << std::endl << "HP TEST" << std::endl;
 	std::cout << "Attempting to make SHARK take 10 points of damage 11 times" << std::endl;
@@ -20,6 +21,7 @@ int main(void)
 		b.takeDamage(10); // should stop after 10 times
 	b.beRepaired(100); // should not work because hp <= 0
 	b.attack("CROCODILE"); // should not work because hp <= 0
+	b.guardGate(); // should not work because hp <= 0
 
 	std::cout << std::endl << "MAX HP TEST" << std::endl;
 	c.beRepaired(2);
